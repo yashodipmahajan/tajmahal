@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    
+
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('taj.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition:  1s linear;
+    transition-property:  background-image;
+    transition-duration: 2s;
+    
+
+    animation: backg 20s infinite ease-in-out;
+  
+}
+
+
+nav{
+width: 100%;
+height: 15vh;
+background: rgba(0, 0,0,0.2);
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-transform: uppercase;
+}
+nav .logo{
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+    /* border: 2px solid red; */
+}
+.logo h1:hover{
+        transform:rotateY('90deg');
+       
+        
+    
+}
+nav .menu{
+    width: 40%;
+    /* background: yellow; */
+    display: flex;
+    justify-content: space-around;
+    transition: all 0.5s ease;
+
+}
+
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    /* font-weight: 1200; */
+    font-weight: bold;
+
+}
+nav .menu a:first-child{
+    color: #00b894;
+
+}
+main{
+    width: 100%;
+    height: 85vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+}
+
+section{
+
+}
+
+section h3{ 
+font-size: 35px;
+font-weight: 200;
+letter-spacing: 3px;
+text-shadow: 1px 1px 2px black; 
+text-transform: uppercase;
+
+}
+section h1{ 
+font-size: 55px;
+margin: 30px 0 20px;
+font-weight: 700;
+/* letter-spacing: 3px; */
+text-shadow: 1px 1px 5px black; 
+text-transform: uppercase;
+
+}
+
+section p{
+   font-size: 25px;
+   word-spacing: 2px;
+   margin-bottom: 25px;
+   text-shadow: 1px 1px 1px black;
+
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+    /* color: white; */
+    transition: all 0.5s ease;
+}
+
+section .btn1{
+    background-color:white;
+    color: black;
+    /* transition: all 0.5s ease; */
+}
+.btn1:hover{
+    background-color: #00b894;
+    color: white;
+}
+
+section .btn2{
+      background-color: #00b894;
+      color: white;
+      /* transition: all 0.5s ease; */
+}
+
+.btn2:hover{
+    background-color:white;
+    color: black;
+}
+.change_content:after{
+content: "";
+transition:  1s linear;
+animation: change 20s infinite linear;
+/* animation-duration: 10s;
+animation-iteration-count: infinite; */
+color: #00b894;
+ 
+}
+section h1{
+  transition: all 1s ease-in-out;
+}
+ .change_content{
+    transition: all 1s ease-in-out;
+    
+ }
+
+@keyframes change{
+   0%{
+    content: "AGRA";
+   
+   
+
+   }
+   20%{
+    content: "DARJEELING";
+    
+   }
+   35%{
+      content: "jaipur";
+   
+   }
+   60%{
+    content: "kerala";
+
+   }
+   80%{
+    content: "delhi"; 
+   }
+    100%{
+        content: "mumbai";
+    
+    }
+
+}
+
+@keyframes backg{
+    0%{
+
+        background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('taj.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+ 
+    }
+    20%{
+     /* content: "AGRA"; */
+     
+     background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('dar.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     
+    }
+    35%{
+       /* content: "jaipur"; */
+       background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('jaipur.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    60%{
+     /* content: "kerala"; */
+     background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('bg1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    80%{
+     /* content: "delhi";   } */
+     background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('https://c0.wallpaperflare.com/preview/201/381/268/ancient-architecture-blue-sky-building.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+     100%{
+         /* content: "mumbai"; */
+         background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('https://c1.wallpaperflare.com/preview/533/821/255/bombay-city-docks-photos.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+ 
+ }
+ 
